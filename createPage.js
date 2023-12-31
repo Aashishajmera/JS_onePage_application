@@ -1417,14 +1417,14 @@ function checkOutForm() {
   backButton.addEventListener("click", () => {
     viewCartFun(2);
   });
-  backButton.setAttribute("class", "btn btn-secondary ps-3 pe-5 col-md-1 ms-5");
+  backButton.setAttribute("class", "btn btn-secondary col-md-2 ms-5");
   btnRow.appendChild(backButton);
 
   //  make payment button
   let payment = document.createElement("button");
   payment.setAttribute("type", "submit");
   payment.innerText = "Make Payment";
-  payment.setAttribute("class", "btn btn-success col-md-3 ms-2");
+  payment.setAttribute("class", "btn btn-success col-md-8 ms-2");
   payment.addEventListener("click", (name, email, PhoneNum, cartNumber, cvcNumber) => {
     let checkName = /[A-Za-z]{1,32}/;
     let checkemail = /[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$/;
