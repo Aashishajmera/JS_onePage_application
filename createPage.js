@@ -909,7 +909,7 @@ function createCart(data) {
       "style",
       "width:30%; height:450px; border:1px solid black; box-shadow: 0px 0px 10px 5px rgb(100, 100, 100);"
     );
-    cartDiv.setAttribute("class", "m-3 d-flex flex-column align-items-center");
+    cartDiv.setAttribute("class", "m-3 d-flex flex-column align-items-center flex-wrap");
 
     // products image
     let productImg = document.createElement("img");
